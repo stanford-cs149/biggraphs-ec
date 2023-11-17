@@ -104,6 +104,8 @@ You can run bfs using:
 
     ./bfs <PATH_TO_GRAPHS_DIRECTORY>/rmat_200m.graph
 
+where `<PATH_TO_GRAPHS_DIRECTORY>` is the path to the directory containing the graph files (see the "Dataset" section above).
+
 When you run `bfs`, you'll see execution time and the frontier size printed for each step in the algorithm.  Correctness will pass for the top-down version (since we've given you a correct sequential implementation), but it will be slow.  (Note that `bfs` will report failures for a "bottom up" and "hybrid" versions of the algorithm, which you will implement later in this assignment.)
 
 In this part of the assignment your job is to parallelize top-down BFS. As with page rank, you'll need to focus on identifying parallelism, as well as inserting the appropriate synchronization to ensure correctness. We wish to remind you that you __should not__ expect to achieve near-perfect speedups on this problem (we'll leave it to you to think about why!). 
