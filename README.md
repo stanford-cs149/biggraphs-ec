@@ -1,10 +1,10 @@
 # Assignment 5: Big Graph Processing in OpenMP #
 
-**Due: Dec 07 11:59PM (Last day of class)**
+**Due: Fri Dec 8th, 11:59PM PT (No late submission allowed)**
 
 **84 points total** 
 
-Note: This is an **extra credit assignment**. Students that elect to do the assignment can boost the grade of any prior programming assignment by **up to 10 points**.
+If you complete this assignment, you will receive up to 10 bonus points on one of the regular programming assignments (PA1-PA4). Note that programming assignment averages are not capped, so this is essentially "extra credit" on the course.
 
 ## Overview ##
 
@@ -14,14 +14,10 @@ In this assignment, you will implement  [breadth-first search](https://en.wikipe
 
 Final grading of this assignment will be performed on 32 vCPU machines that you will run on the AWS cloud platform. However, you may begin this assignment on the 4-core (8 hyperthread) machines in the Myth cluster if you would like. These machines will suffice for basic development and performance testing. That being said, **test your code on AWS before submitting**. You can test your code on the shared cluster you used for PA4. Alternatively, you can set up your own EC2 cluster ([instructions](./cloud_readme.md)) but you need some budget for this option.
 
-To get started on myth machines:
-
-**Note: to do this step, you may need to add an SSH key pair to your GitHub account and the myth machines:** [Add SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-
-Download the Assignment 5 starter code from the course Github page using:
+The assignment starter code is available on [Github](https://github.com/stanford-cs149/biggraphs-ec). Please clone the Assignment 5 starter code using:
 
 ```
-git clone git@github.com:stanford-cs149/biggraphs-ec.git
+git clone https://github.com/stanford-cs149/biggraphs-ec.git
 ```
 
 #### Background: Learning OpenMP ####
