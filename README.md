@@ -12,7 +12,7 @@ In this assignment, you will implement  [breadth-first search](https://en.wikipe
 
 ## Environment Setup ##
 
-Final grading of this assignment will be performed on 32 vCPU machines that you will run on the AWS cloud platform. However, you may begin this assignment on the 4-core (8 hyperthread) machines in the Myth cluster if you would like. These machines will suffice for basic development and performance testing. That being said, **test your code on AWS before submitting**. You can test your code on the shared cluster you used for PA4. Alternatively, you can set up your own EC2 cluster [instructions](./cloud_readme.md) but you need some budget for this option.
+Final grading of this assignment will be performed on 32 vCPU machines that you will run on the AWS cloud platform. However, you may begin this assignment on the 4-core (8 hyperthread) machines in the Myth cluster if you would like. These machines will suffice for basic development and performance testing. That being said, **test your code on AWS before submitting**. You can test your code on the shared cluster you used for PA4. Alternatively, you can set up your own EC2 cluster ([instructions](./cloud_readme.md)) but you need some budget for this option.
 
 To get started on myth machines:
 
