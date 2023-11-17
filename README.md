@@ -20,6 +20,8 @@ The assignment starter code is available on [Github](https://github.com/stanford
 git clone https://github.com/stanford-cs149/biggraphs-ec.git
 ```
 
+**Do not store any unencrypted private SSH keys or any other sensitive information on shared cluster.** The course staff do not provide any information security guarantee for the shared cluster.
+
 #### Background: Learning OpenMP ####
 
 In this assignment we'd like you to use [OpenMP](http://openmp.org/) for multi-core parallelization. OpenMP is an API and set of C-language extensions that provides compiler support for parallelism. You can also use OpenMP to tell the compiler to parallelize iterations of `for` loops, and to manage mutual exclusion. It is well documented online, but here is a brief example of parallelizing a `for` loop, with mutual exclusion.
