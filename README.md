@@ -79,8 +79,7 @@ In this project, you will use a large graph dataset to test the performance. The
 
 - If you are working on a myth machine, the path to graphs directory is `/afs/ir.stanford.edu/class/cs149/data/asst3_graphs/`
 - If you are wokring on the shared cluster, the path to graphs directory is `/opt/cs149_graphs`
-- If you are working on your own EC2 instance, the dataset can be downloaded from <http://cs149.stanford.edu/cs149asstdata/all_graphs.tgz>. You can download the dataset using `wget http://cs149.stanford.edu/cs149asstdata/all_graphs.tgz`, and then untar it with `tar -xzvf all_graphs.tgz`. Be careful, this is a 3 GB download.
-- On your local machine, please paste the preceding link into your browser to download the .tgz file. 
+- If you are working on your own EC2 instance or your local machine, the dataset can be downloaded from <http://cs149.stanford.edu/cs149asstdata/all_graphs.tgz>. You can download the dataset using `wget http://cs149.stanford.edu/cs149asstdata/all_graphs.tgz`, and then untar it with `tar -xzvf all_graphs.tgz`. Be careful, this is a 3 GB download.
 
 Some interesting real-world graphs include:
 
