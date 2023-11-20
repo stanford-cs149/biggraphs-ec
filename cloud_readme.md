@@ -1,6 +1,6 @@
 # AWS Setup Instructions #
 
-For performance testing, you will need to run your code on a VM instance on Amazon Web Services (AWS). We've already sent you student coupons that you can use for billing purposes. Here are the steps for how to get setup for running on AWS.
+For performance testing, you will need to run your code on a VM instance on Amazon Web Services (AWS). Here are the steps for how to get setup for running on AWS. Note that if you are using the shared cluster, you do not need to do any setup.
 
 NOTE: __Please don't forget to SHUT DOWN your instances when you're done for the day to avoid burning through credits overnight!__
 
