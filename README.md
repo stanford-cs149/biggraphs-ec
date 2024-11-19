@@ -1,6 +1,6 @@
 # Assignment 5: Big Graph Processing in OpenMP #
 
-**Due: Fri Dec 8th, 11:59PM PT (No late submission allowed)**
+**Due: Fri Dec 6th, 4:59PM PT (No late submission allowed)**
 
 **84 points total** 
 
