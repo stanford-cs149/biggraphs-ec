@@ -38,7 +38,7 @@ for (int i = 0; i < 100; i++) {
     }                                                                             
 }
 ``` 
-Please see OpenMP documentation for the syntax for how to tell OpenMP to use different forms of static or dynamic scheduling. (For example, `omp parallel for schedule(dynamic 100)` distributes iterations to threads using dynamic scheduling with a chunk size of 100 iterations).  You can think of the implementation as a dynamic work queue where threads in the thread pool pull off 100 iterations at once, like what [we talked about in these lecture slides](https://gfxcourses.stanford.edu/cs149/fall23/lecture/perfopt1/slide_11).
+Please see OpenMP documentation for the syntax for how to tell OpenMP to use different forms of static or dynamic scheduling. (For example, `omp parallel for schedule(dynamic 100)` distributes iterations to threads using dynamic scheduling with a chunk size of 100 iterations).  You can think of the implementation as a dynamic work queue where threads in the thread pool pull off 100 iterations at once, like what [we talked about in these lecture slides](https://gfxcourses.stanford.edu/cs149/fall24/lecture/perfopt1/slide_11).
     
 Here is an example for an atomic counter update in OpenMP.
 ```c
