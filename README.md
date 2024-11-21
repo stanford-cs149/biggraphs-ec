@@ -136,7 +136,7 @@ __Tips/Hints:__
 
 ## Part 3: Hybrid BFS (25 points) ##
 
-Notice that in some steps of the BFS, the "bottom up" BFS is signficantly faster than the top-down version.  In other steps, the top-down version is signficantly faster.  This suggests a major performance improvement in your implementation, if __you could dynamically choose between your "top down" and "bottom up" formulations based on the size of the frontier or other properties of the graph!__  If you want a solution competitive with the reference one, your implementation will likely have to implement this dynamic optimization.  Please provide your solution in `bfs_hybrid()` in `bfs/bfs.cpp`.
+Notice that in some steps of the BFS, the "bottom up" BFS is significantly faster than the top-down version.  In other steps, the top-down version is significantly faster.  This suggests a major performance improvement in your implementation, if __you could dynamically choose between your "top down" and "bottom up" formulations based on the size of the frontier or other properties of the graph!__  If you want a solution competitive with the reference one, your implementation will likely have to implement this dynamic optimization.  Please provide your solution in `bfs_hybrid()` in `bfs/bfs.cpp`.
 
 __Tips/Hints:__
 
@@ -171,6 +171,6 @@ If you earn `x` points on this assignment, we will boost your grade on any prior
 Please submit your work using Gradescope.
 
 1. __Please submit your writeup as a PDF in the Gradescope assignment Programming Assignment 5 (Writeup).__
-2. __To submit your code, run `sh create_submission.h` to generate a `tar.gz` file and submit it to Programming Assignment 5 (Code).__ We only look that your `bfs/bfs.cpp` and `bfs/bfs.h` file, so do not change any other file. Before submitting the source files, make sure that all code is compilable and runnable! We should be able to simply make, then execute your programs in the `/bfs`  directories without manual intervention. 
+2. __To submit your code, run `sh create_submission.h` to generate a `tar.gz` file and submit it to Programming Assignment 5 (Code).__ We only look that your `bfs/bfs.cpp` and `bfs/bfs.h` file, so do not change any other files. Before submitting the source files, make sure that all code is compilable and runnable! We should be able to simply make, then execute your programs in the `/bfs`  directories without manual intervention. 
 
 Our grading scripts will rerun the checker code allowing us to verify your score matches what you submitted in your writeup.  We may also run your code on other datasets to further examine its correctness.
