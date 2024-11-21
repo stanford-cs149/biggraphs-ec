@@ -76,7 +76,7 @@ for (int i=0; i<num_nodes(g); i++) {
 In this project, you will use a large graph dataset to test the performance. The dataset can be found depending on your setup:
 
 - If you are working on a myth machine, the path to graphs directory is `/afs/ir.stanford.edu/class/cs149/data/asst3_graphs/`
-- If you are working on your own EC2 instance or your local machine, the dataset can be downloaded from <http://cs149.stanford.edu/cs149asstdata/all_graphs.tgz>. You can download the dataset using `wget http://cs149.stanford.edu/cs149asstdata/all_graphs.tgz`, and then untar it with `tar -xzvf all_graphs.tgz`. Be careful, this is a 3 GB download.
+- If you are working on your local machine, the dataset can be downloaded from <http://cs149.stanford.edu/cs149asstdata/all_graphs.tgz>. You can download the dataset using `wget http://cs149.stanford.edu/cs149asstdata/all_graphs.tgz`, and then untar it with `tar -xzvf all_graphs.tgz`. Be careful, this is a 3 GB download.
 
 Some interesting real-world graphs include:
 
@@ -109,7 +109,7 @@ In this part of the assignment your job is to parallelize top-down BFS. You'll n
 __Tips/Hints:__
 
 * Always start by considering what work can be done in parallel.
-* Some parts of the computation may need to be synchronized, for example, by wrapping the appropriate code within a critical region using `#pragma omp critical` or `#pragma omp atomic`.  __However, in this problem you should think about how to make use of the simple atomic operation called `compare and swap`.__  You can read about [GCC's implementation of compare and swap](http://gcc.gnu.org/onlinedocs/gcc-4.1.2/gcc/Atomic-Builtins.html), which is exposed to C code as the function `__sync_bool_compare_and_swap`.  If you can figure out how to use compare-and-swap for this problem, you will achieve much higher performance than using a critical region. 
+* Some parts of the computation may need to be synchronized, for example, by wrapping the appropriate code within a critical region using `#pragma omp critical` or `#pragma omp atomic`.  __However, in this problem you should think about how to make use of the simple atomic operation called `compare and swap`.__  You can read about [GCC's implementation of compare and swap](https://gcc.gnu.org/onlinedocs/gcc-9.4.0/gcc/_005f_005fsync-Builtins.html), which is exposed to C code as the function `__sync_bool_compare_and_swap`.  If you can figure out how to use compare-and-swap for this problem, you will achieve much higher performance than using a critical region. 
 * Updating a shared counter can be done efficiently using `#pragma omp atomic` before a line like `counter++;`. 
 * Are there conditions where it is possible to avoid using `compare_and_swap`?  In other words, when you *know* in advance that the comparison will fail?
 * There is a preprocessor macro `VERBOSE` to make it easy to disable useful print per-step timings in your solution (see the top of `bfs/bfs.cpp`).  In general, these printfs occur infrequently enough (only once per BFS step) that they do not notably impact performance, but if you want to disable the printfs during timing, you can use this `#define` as a convenience.
@@ -151,7 +151,7 @@ Along with your code, we would like you to hand in a clear but concise high-leve
 Aspects of your work that you should mention in the write-up include:
 
 1. Include both partners' names at the top of your write-up.
-2. Run bfs_grader on AWS and insert a copy of the score table in your solutions.
+2. Run bfs_grader on a Myth machine and insert a copy of the score table in your solutions. **We will use Myth machines to grade your code.**
 3. Describe the process of optimizing your code:
  * In Part 1 (Top Down) and 2 (Bottom Up), where is the synchronization in each of your solutions? Do you do anything to limit the overhead of synchronization?
  * In Part 3 (Hybrid), did you decide to switch between the top-down and bottom-up BFS implementations dynamically? How did you decide which implementation to use?
