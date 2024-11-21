@@ -12,15 +12,13 @@ In this assignment, you will implement  [breadth-first search](https://en.wikipe
 
 ## Environment Setup ##
 
-Final grading of this assignment will be performed on 32 vCPU machines that you will run on the AWS cloud platform. However, you may begin this assignment on the 4-core (8 hyperthread) machines in the Myth cluster if you would like. These machines will suffice for basic development and performance testing. That being said, **test your code on AWS before submitting**. You can test your code on the shared cluster you used for PA4. Alternatively, you can set up your own EC2 cluster ([instructions](./cloud_readme.md)) but you need some budget for this option.
+Final grading of this assignment will be performed on the Myth machines.
 
 The assignment starter code is available on [Github](https://github.com/stanford-cs149/biggraphs-ec). Please clone the Assignment 5 starter code using:
 
 ```
 git clone https://github.com/stanford-cs149/biggraphs-ec.git
 ```
-
-**Do not store any unencrypted private SSH keys or any other sensitive information on shared cluster.** The course staff do not provide any information security guarantee for the shared cluster.
 
 #### Background: Learning OpenMP ####
 
@@ -78,7 +76,6 @@ for (int i=0; i<num_nodes(g); i++) {
 In this project, you will use a large graph dataset to test the performance. The dataset can be found depending on your setup:
 
 - If you are working on a myth machine, the path to graphs directory is `/afs/ir.stanford.edu/class/cs149/data/asst3_graphs/`
-- If you are wokring on the shared cluster, the path to graphs directory is `/opt/cs149_graphs`
 - If you are working on your own EC2 instance or your local machine, the dataset can be downloaded from <http://cs149.stanford.edu/cs149asstdata/all_graphs.tgz>. You can download the dataset using `wget http://cs149.stanford.edu/cs149asstdata/all_graphs.tgz`, and then untar it with `tar -xzvf all_graphs.tgz`. Be careful, this is a 3 GB download.
 
 Some interesting real-world graphs include:
