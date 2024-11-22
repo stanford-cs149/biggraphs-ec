@@ -4,7 +4,7 @@
 
 **84 points total** 
 
-If you complete this assignment, you will receive up to 10 bonus points on one of the regular programming assignments (PA1-PA4). Note that programming assignment averages are not capped, so this is essentially "extra credit" on the course.
+If you complete this assignment, you will receive up to 10 bonus points on one of the regular programming assignments (PA1-PA4). However, this extra credit can only boost an assignment to 100 points.
 
 ## Overview ##
 
